@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48"
+   height="48"
+   viewBox="0 0 12.7 12.7"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="logo11.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="false"
+     showborder="true"
+     inkscape:snap-nodes="false"
+     inkscape:snap-global="false"
+     units="px"
+     inkscape:zoom="2.5600001"
+     inkscape:cx="43.945312"
+     inkscape:cy="79.882811"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g21755" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#000000;stroke:#000000;stroke-width:4.20138"
+       id="rect13768"
+       width="117.15566"
+       height="35.889023"
+       x="-7.5669351"
+       y="90.069962" />
+    <g
+       aria-label="W"
+       id="text2014"
+       style="font-weight:bold;font-size:12.7px;line-height:1.25;font-family:Rockwell;-inkscape-font-specification:'Rockwell Bold';fill:#808000;stroke-width:0.264583"
+       transform="matrix(0.47076742,0,0,0.47076742,-6.7759058,-12.636798)" />
+    <g
+       id="g21755"
+       transform="matrix(0.83004874,0,0,0.83004874,1.155624,0.99226649)"
+       style="fill:#ffffff;fill-opacity:1">
+      <g
+         id="g22643"
+         transform="matrix(0.77402996,0,0,0.77402996,1.5319963,1.2031848)"
+         style="fill:#f3c50f;fill-opacity:1">
+        <g
+           id="g13918"
+           transform="matrix(0.47076742,0,0,0.47076742,-6.7759058,-13.877032)"
+           style="fill:#f3c50f;fill-opacity:1">
+          <path
+             d="M 19.292805,38.935171 16.83094,31.710806 H 15.919368 V 30.25353 h 3.888135 v 1.457276 h -0.892969 l 1.401465,4.142382 1.314648,-4.142382 H 20.8493 V 30.25353 h 3.100585 v 1.457276 h -0.799951 l 1.413867,4.142382 1.358057,-4.142382 H 25.059895 V 30.25353 h 3.454053 v 1.457276 h -0.936377 l -2.38125,7.224365 h -1.612305 l -1.358056,-3.937744 -1.283643,3.937744 z"
+             id="path13872"
+             style="font-weight:bold;font-size:12.7px;line-height:1.25;font-family:Rockwell;-inkscape-font-specification:'Rockwell Bold';fill:#f3c50f;fill-opacity:1;stroke-width:0.264583" />
+          <g
+             aria-label="W"
+             id="text9950"
+             style="font-weight:bold;font-size:12.7px;line-height:1.25;font-family:Rockwell;-inkscape-font-specification:'Rockwell Bold';fill:#f3c50f;fill-opacity:1;stroke-width:0.264583">
+            <path
+               d="M 31.278172,38.935171 28.816307,31.710806 H 27.904735 V 30.25353 h 3.888135 v 1.457276 h -0.892969 l 1.401465,4.142382 1.314648,-4.142382 H 32.834666 V 30.25353 h 3.100586 v 1.457276 h -0.799951 l 1.413867,4.142382 1.358057,-4.142382 H 37.045262 V 30.25353 h 3.454053 v 1.457276 h -0.936377 l -2.38125,7.224365 h -1.612305 l -1.358056,-3.937744 -1.283643,3.937744 z"
+               id="path13893"
+               style="fill:#f3c50f;fill-opacity:1" />
+          </g>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.81387px;line-height:1.25;font-family:'Sitka Subheading';-inkscape-font-specification:'Sitka Subheading Bold';fill:#f3c50f;fill-opacity:1;stroke-width:0.121122"
+           x="3.5399656"
+           y="5.7219"
+           id="text16573"
+           transform="scale(0.45778534,2.1844299)"><tspan
+             sodipodi:role="line"
+             id="tspan16571"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Sitka Subheading';-inkscape-font-specification:'Sitka Subheading Bold';fill:#f3c50f;fill-opacity:1;stroke-width:0.121122"
+             x="3.5399656"
+             y="5.7219">PCSHOP</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
