@@ -47,20 +47,27 @@
         <div class="card-body">
          
           <h1 class="card-title text-center ">The Best Choise</h1>
-          @foreach ($product->productImages as $productImage)
+          @if (isset($product->productImages))
+          @foreach ($product->productImages  as $productImage)
          
 
          
-              <img class="" width="60px" height="30px" src="{{ asset('storage/products/'.$productImage->image)}}" alt="">
-             
-          @endforeach
-          <h3><span class="badge bg-danger rounded-pill float-end">{{ $product->selling_price }}€</span></h3>
-          <p class="text-muted card-text">{{ $product->name }}</p>
+          <img class="" width="60px" height="30px" src="{{ asset('storage/products/'.$productImage->image)}}" alt="">
+         
+      @endforeach
+          @else
+          
+          <img class="" width="60px" height="30px" src="{{ asset('public/img/background2.jpg')}}" alt="">
+          
+          @endif
+         
+          {{-- <h3><span class="badge bg-danger rounded-pill float-end">{{ $product->selling_price }}€</span></h3> --}}
+          {{-- <p class="text-muted card-text">{{ $product->name }}</p> --}}
          
           
           <form action="{{ route('product.add_to_cart') }}" method="POST">
             @csrf
-            <input type="hidden" name="product_id" value={{$product['id']}}>
+            <input type="hidden" name="product_id" value={{$product['id'] ?? ''}}>
         <button class="btn btn-outline-secondary">Add to Cart</button>
         </form>
           
