@@ -54,7 +54,9 @@ class ProductController extends Controller
                 $imageName=time() .$i++.'.'. $image->extension();
 
                 // Image::make($image)->resize(300,200)->save(public_path('/storage/products'),$imageName);
-
+                // $image->resize(110, 110, function ($const) {
+                //     $const->aspectRatio();
+                // });
                 $image->move(public_path('/storage/products'),$imageName);
 
                 $product->productImages()->create([
@@ -118,5 +120,16 @@ public function cartList()
        
 
         return  Cart::where('user_id',auth()->user()->id)->count();
+     }
+
+     public function search(Request $request)
+     {
+        $products=Product::where('name','like','%'.$request->search.'%')
+                            ->orWhere('brand','like','%'.$request->search.'%')
+                            ->orWhere('selling_price','like','%'.$request->search.'%')
+
+                            ->get();
+
+        return view('search',compact('products'));
      }
 }

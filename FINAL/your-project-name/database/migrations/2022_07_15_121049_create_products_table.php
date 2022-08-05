@@ -26,7 +26,7 @@ return new class extends Migration
             $table->integer('selling_price');
             $table->integer('quantity');
 
-            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
+            // $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -26,61 +26,12 @@
 
 
   <div class="row">
-    <div class="col-md-4">
-      <div class="row">
-        <div class="col-md-6 col-sm-6 col-xs-4">
-          <h2 class="mb-4">Categories</h2>
-          <div class="btn-group  btn-group-vertical  dropend">
-            <a href="{{ route('landingPage.index') }}" class="btn btn-sm mb-1 btn-secondary">ALL PRODUCTS</a>
-            @foreach ($parentCategories as $parentCategory)
-            <div class="btn-group">
-              <a href="{{ route('landingPage.index',['category'=>$parentCategory->id]) }}" type="button"
-                class="btn mb-1 btn-secondary">
-                {{ $parentCategory->name }}
-              </a>
-              <button type="button" class="btn mb-1 d-block btn-secondary dropdown-toggle dropdown-toggle-split"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="visually-hidden"> </span>
-              </button>
-
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                @if(count($parentCategory->subcategory))
-                <li><a class="dropdown-item " href="">
-                    @include('landingPage.subCategoryList',['subcategories' => $parentCategory->subcategory])
-                  </a>
-                </li>
-                @endif
-              </ul>
-            </div>
-
-
-            @endforeach
-          </div>
-
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-4">
-          <h2 class="mb-4">Brands</h2>
-          <div class="btn-group  btn-group-vertical" role="group" aria-label="Basic example">
-            <a href="" class="btn btn-sm btn-warning mb-1">all brands</a>
-            @foreach ($brands as $brand )
-            <a href="{{ route('landingPage.index',['brand'=>$brand->name]) }}" class="btn btn-warning mb-1">{{
-              $brand->name }}</a>
-            @endforeach
-          </div>
-
-
-        </div>
-      </div>
-
-      <!-- Split dropend button -->
-
-
-
-    </div>
-
+  
 
     <div class="col-md-8">
-      <h2>Products</h2>
+      
+        <a href="{{ route('landingPage.index') }}" class="btn btn-sm btn-primary"> <h2>All Products</h2></a>
+       
       <div class="row ">
        
       @foreach ($products as $product)

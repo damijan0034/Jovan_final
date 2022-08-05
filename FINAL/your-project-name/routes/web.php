@@ -72,3 +72,4 @@ Route::middleware(['auth'])->group(function(){
 
 Route::get('/landing_page',[LandingPageController::class,'index'])->name('landingPage.index');
 Route::get('/landing_page/{product:slug}/show',[LandingPageController::class,'show'])->name('landingPage.show');
+Route::get('/search',[ProductController::class,'search'])->name('search');
