@@ -53,16 +53,21 @@
 
          
           <img class="" width="60px" height="30px" src="{{ asset('storage/products/'.$productImage->image)}}" alt="">
+          
          
       @endforeach
-          @else
+      @endif
+      @if (isset($product->selling_price))
+          <h3><span class="badge bg-danger rounded-pill float-end">{{ $product->selling_price }}€</span></h3> 
+      @endif
+
+      @if (isset($product->name))
+      <p class="text-muted card-text">{{ $product->name }}</p> 
+      @endif
+      
+       
           
-          <img class="" width="60px" height="30px" src="{{ asset('public/img/background2.jpg')}}" alt="">
           
-          @endif
-         
-          {{-- <h3><span class="badge bg-danger rounded-pill float-end">{{ $product->selling_price }}€</span></h3> --}}
-          {{-- <p class="text-muted card-text">{{ $product->name }}</p> --}}
          
           
           <form action="{{ route('product.add_to_cart') }}" method="POST">
