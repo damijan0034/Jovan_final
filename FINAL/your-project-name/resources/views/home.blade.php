@@ -98,12 +98,12 @@
       $image=$productImages[0];
   @endphp --}}
  
-      <img width="30%" height="20%" src="{{ asset('storage/products/'.(($productImages[0]->image) ?? '')) }}" alt="...">
+      <img  style="height: 200px" src="{{ asset('storage/products/'.(($productImages[0]->image) ?? '')) }}" alt="...">
     </div>
 
     @foreach ($productImages as $productImage)
     <div class="carousel-item">
-      <img width="30%" height="20%" src="{{ asset('storage/products/'.($productImage->image)) }}" class="d-block " alt="...">
+      <img  style="height: 200px"  src="{{ asset('storage/products/'.($productImage->image)) }}" class="d-block " alt="...">
     </div>
     @endforeach
   

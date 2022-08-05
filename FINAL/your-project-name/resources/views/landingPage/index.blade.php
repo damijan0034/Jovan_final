@@ -34,7 +34,7 @@
             <a href="{{ route('landingPage.index') }}" class="btn btn-sm mb-1 btn-secondary">ALL PRODUCTS</a>
             @foreach ($parentCategories as $parentCategory)
             <div class="btn-group">
-              <a href="{{ route('landingPage.index',['category'=>$parentCategory->id]) }}" type="button"
+              <a href="{{ route('landingPage.index',['category_id'=>$parentCategory->id]) }}" type="button"
                 class="btn mb-1 btn-secondary">
                 {{ $parentCategory->name }}
               </a>
@@ -95,12 +95,15 @@
           <a style="text-decoration: none;color:black" href="{{ route('landingPage.show',[$product->slug]) }}" class=" ">
             <div class="card mb-3" style="width: 12rem;height:10rem">
           
-                <img height="50%" src="{{ asset('storage/products/'.$firstImage->image) }}" class=" img-fluid" alt="...">
+                <img style="height: 300px" src="{{ asset('storage/products/'.$firstImage->image) }}" class=" img-fluid" alt="...">
             
               
-              <div class="card-body">
-               <h5>{{ $product->selling_price }}€</h5>
-              </div>
+              
+               <h6>{{ $product->name }}-{{ $product->selling_price }}€ </h6>
+            
+            
+             
+              
             </div>
           </a>
         </div>
