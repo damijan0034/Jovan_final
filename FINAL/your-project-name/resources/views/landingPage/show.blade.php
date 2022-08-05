@@ -59,35 +59,6 @@
 
 
 
-<footer>
-    <div class="row">
-        <div class="col-9">
-            <div style="margin: 40px" class="container">
-                <div class="row">
-                    <div style="text-align:center" class="col-3">
-                        <h6>COMPANY</h6>
-                        <ul style=" list-style: none;color:gray;text-align:center;font-size:14px;">
-                            <li>Product</li>
-                            <li>Work here</li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <h6>SERVICE</h6>
-                    </div>
-                    <div class="col-3">
-                        <h6>ORDER</h6>
-                    </div>
-                    <div class="col-3">
-                        <h6>LEGAL</h6>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-        <div class="col-3"></div>
-    </div>
-</footer>
 
 @endsection

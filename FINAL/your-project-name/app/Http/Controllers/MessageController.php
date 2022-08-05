@@ -39,4 +39,14 @@ class MessageController extends Controller
         $message=Message::find($id);
         return view('admin.messages.single_message',compact('message'));
     }
+
+    public function deleteMessage ($id)
+    {
+        $message=Message::find($id);
+
+        $message->delete();
+
+        return redirect(route('admin.dashboard'));
+
+    }
 }

@@ -66,6 +66,7 @@ Route::middleware(['auth'])->group(function(){
 
     Route::get('/create_message/{id}',[MessageController::class,'createMessage'])->name('create_message');
     Route::post('/send_message',[MessageController::class,'sendMessage'])->name('send_message');
+    Route::delete('/admin/single_message/{id}',[MessageController::class,'deleteMessage']);
    
 
 });

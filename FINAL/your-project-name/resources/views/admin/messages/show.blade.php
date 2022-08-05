@@ -31,14 +31,20 @@
                                @foreach ($messages as $message)
                                    <tr>
                                     <td>{{ $message->title }}</td>
-                                    <td>{{ $message->user->name }}</td>
-                                    <td>{{ $message->user->email }}</td>
+                                    <td>{{ $message->user->name ?? ''}}</td>
+                                    <td>{{ $message->user->email ?? '' }}</td>
 
                                     <td>
-                                       {{ $message->product->name }}
+                                       {{ $message->product->name ?? ''}}
                                     </td>
                                    <td>
                                     <a href="/admin/single_message/{{ $message->id }}" class="btn btn-info">Show</a>
+                                    <form action="/admin/single_message/{{ $message->id }}" method="post">
+                                        @csrf
+                                        @method('delete')
+                                        <button class="btn btn-danger">Delete</button>
+                                    </form>
+                                    
                                    </td>
 
                                       
