@@ -99,8 +99,8 @@
             
               
               
-               <h6>{{ $product->name }}-{{ $product->selling_price }}€ </h6>
-            
+               <h6>{{ $product->name }}</h6>
+               <span class="badge bg-danger rounded-pill float-end">{{ $product->selling_price }}€</span>
             
              
               

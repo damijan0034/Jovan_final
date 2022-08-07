@@ -27,25 +27,17 @@
                     <h5 class="card-title">{{ $product->name }}</h5>
                     <p class="card-text">{{ $product->small_description }}</p>
                 </div>
-                {{-- <ul class="list-group list-group-flush">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                </ul> --}}
-                <div class="card-body">
-{{--                    
-                    <form method="post" action="{{ route('product.add_to_cart',[$product]) }}">
-                        
-                        <input type="hidden"  value="{{ $product->id }}" name="product_id" >
-                        <button type="submit" class="btn btn-sm btn-success">Add To Cart</button>
-                    </form> --}}
-
+                
+                <div class="card-footer">
+                  
+                  
                     <form action="{{ route('product.add_to_cart') }}" method="POST">
                         @csrf
                         <input type="hidden" name="product_id" value={{$product['id']}}>
                     <button class="btn btn-primary">Add to Cart</button>
                     </form>
                     
+                    <a style="text-decoration: none;color:orange" href="{{ route('landingPage.index') }}" class="float-end">Back</a>
                    
                 </div>
             </div>
