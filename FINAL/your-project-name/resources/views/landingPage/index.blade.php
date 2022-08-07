@@ -100,7 +100,7 @@
               
               
                <h6>{{ $product->name }}</h6>
-               <span class="badge bg-danger rounded-pill float-end">{{ $product->selling_price }}€</span>
+               <span class="badge bg-success rounded-pill float-end">{{ $product->selling_price }}€</span>
             
              
               

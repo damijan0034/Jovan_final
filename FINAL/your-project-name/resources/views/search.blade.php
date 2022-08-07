@@ -30,7 +30,7 @@
 
     <div class="col-md-8">
       
-        <a href="{{ route('landingPage.index') }}" class="btn btn-sm btn-primary"> <h2>All Products</h2></a>
+        <a href="{{ route('landingPage.index') }}" class="btn btn-sm btn-primary mb-5"> All Products</a>
        
       <div class="row ">
        
@@ -46,13 +46,16 @@
           <a style="text-decoration: none;color:black" href="{{ route('landingPage.show',[$product->slug]) }}" class=" ">
             <div class="card mb-3" style="width: 12rem;height:10rem">
           
-                <img height="50%" src="{{ asset('storage/products/'.$firstImage->image) }}" class=" img-fluid" alt="...">
+              <img style="height: 300px" src="{{ asset('storage/products/'.$firstImage->image) }}" class=" img-fluid" alt="...">
+          
             
-              
-              <div class="card-body">
-               <h5>{{ $product->selling_price }}€</h5>
-              </div>
-            </div>
+            
+             <h6>{{ $product->name }}</h6>
+             <span class="badge bg-danger rounded-pill float-end">{{ $product->selling_price }}€</span>
+          
+           
+            
+          </div>
           </a>
         </div>
       
