@@ -173,11 +173,11 @@
          </div> 
          <div class="row">
              <div class="col-md-4 offset-md-4 text-center">
-                 <img style="margin-right: 10px" height="15px" width="15px" src="{{ asset('storage/icons/social icons/facebook.png') }}" alt="">
-                 <img style="margin-right: 10px" height="15px" width="15px" src="{{ asset('storage/icons/social icons/twitter.png') }}" alt="">
-                 <img style="margin-right: 10px" height="15px" width="15px" src="{{ asset('storage/icons/social icons/youtube.png') }}" alt="">
-                 <img style="margin-right: 10px" height="15px" width="15px" src="{{ asset('storage/icons/social icons/linkedin.png') }}" alt="">
-                 <img style="margin-right: 10px" height="15px" width="15px" src="{{ asset('storage/icons/social icons/instagram.png') }}" alt="">
+                 <img style="margin-right: 10px" height="15px" width="15px" src="{{ asset('social icons/facebook.png') }}" alt="">
+                 <img style="margin-right: 10px" height="15px" width="15px" src="{{ asset('social icons/twitter.png') }}" alt="">
+                 <img style="margin-right: 10px" height="15px" width="15px" src="{{ asset('social icons/youtube.png') }}" alt="">
+                 <img style="margin-right: 10px" height="15px" width="15px" src="{{ asset('social icons/linkedin.png') }}" alt="">
+                 <img style="margin-right: 10px" height="15px" width="15px" src="{{ asset('social icons/instagram.png') }}" alt="">
              </div>
          </div>
          <div style="background: rgb(250, 247, 247);margin-top:10px;font-size:0.8rem" class="text-center text-muted"> 2022 Copyright by WWPCSHOP</div>
