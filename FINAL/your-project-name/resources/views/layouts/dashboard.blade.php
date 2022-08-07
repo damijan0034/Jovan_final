@@ -20,7 +20,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>wwpcshop</title>
+    <title> wwpcshop</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -30,6 +30,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+    <link rel="shortcut icon" href="/img/icons/logo11.svg"    type="image/x-icon">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>

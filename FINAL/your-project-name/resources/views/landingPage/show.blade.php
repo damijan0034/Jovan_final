@@ -25,6 +25,7 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">{{ $product->name }}</h5>
+                    <h4>  <span class="badge bg-success rounded-pill float-end">{{ $product->selling_price }}€</span></h4>
                     <p class="card-text">{{ $product->small_description }}</p>
                 </div>
                 
